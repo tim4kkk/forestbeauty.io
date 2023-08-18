@@ -1,0 +1,65 @@
+.header{
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+padding-top: 20px;
+padding-bottom: 70px;
+
+
+
+    min-height: 800px;
+    // background: url(./../img/cover-forest.jpeg);
+    background: url(./../img/header/cover-forest.jpg);
+    background-repeat: no-repeat;
+
+    @media screen and (max-width:1165px) {
+        min-width: 100%;
+    }
+   
+}
+
+.header__top-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav{
+    @media screen and (max-width: 1200px) {
+        display: flex;
+    }
+    @media screen and (max-width: 1169px) {
+        display: none;
+    }
+}
+
+.header__nav-btn{
+    display: none;
+
+    @media screen and (max-width: 1169px) {
+        display: block;
+    }
+}
+
+.header__title{ 
+    position: relative;
+    bottom: 130px;
+    padding-bottom: 90px;
+    text-align: center;
+    font-size: 48px;
+    font-family:$font-main;
+    color:$dark;
+    font-weight: 700;
+
+    @media screen and (max-width: 1165px){
+        font-size: 32px;
+    padding-bottom: 100px;  }
+}
+.header__title-img{
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translate(-50%, -130%);
+}
